@@ -1,0 +1,70 @@
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+}
+.container{
+    display:grid;
+    height: 50vh;
+    margin:0px 150px 150px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "sidebar main main"
+    "sidebar content1 content2"
+    "sidebar footer footer"
+    ;
+    grid-gap: 5px;
+    border:10px dotted rgb(173, 171, 171);
+
+}
+nav{
+    background-color: rgb(166, 194, 194);
+    grid-area: nav;
+    text-align: center;
+    padding-top:40px;
+    font-size:20px;
+    font-weight: bold;
+}
+main{
+   background-color: rgb(166, 194, 194);
+   grid-area: main;
+   text-align: center;
+   padding-top:40px;
+   font-size:20px;
+   font-weight: bold;
+}
+.sidebar{
+    background-color: rgb(166, 194, 194);
+    grid-area: sidebar;
+    text-align: center;
+    padding-top:40px;
+    font-size:20px;
+    font-weight: bold;
+    
+}
+.content1{
+    background-color: rgb(166, 194, 194);
+    grid-area: content1;
+    text-align: center;
+    padding-top:40px;
+    font-size:20px;
+    font-weight: bold;
+    
+}
+.content2{
+    background-color: rgb(166, 194, 194);
+    grid-area: content2;
+    text-align: center;
+    padding-top:40px;
+    font-size:20px;
+    font-weight: bold;
+}
+footer{
+    background-color: rgb(166, 194, 194);
+    grid-area: footer;
+    text-align: center;
+    padding-top:40px;
+    font-size:20px;  
+    font-weight: bold; 
+}
